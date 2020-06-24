@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+/*Universal Settings*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Balsamiq Sans', 
+    cursive;
+    min-height: 100vh;
+    
+}
+
+main{
+    margin-bottom: 5rem;
+}
+
+.canvas {
+    text-align: center;
+}
+
+#clock {
+    display: inline-block;
+    background-color: #333;
+}
+
+#function,
+#logger {
+
+    text-align: center;
+}
+
+#function #msg,
+#logger button {
+    margin: 0.5em;
+    display: inline-block;
+}
+
+#msg {
+    padding: 1em;
+    font-size: medium;
+}
+
+#tasklist{
+    padding: 3rem 0;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.fcontent{
+    padding: 1em;
+}
+
+.fcontent p{
+    color: white;
+    margin-bottom: 0;
+}
+
+/*Alert*/
+

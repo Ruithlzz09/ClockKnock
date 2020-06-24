@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
+/*Universal Settings*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Balsamiq Sans", cursive;
+  min-height: 100vh;
+}
+
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.fcontent {
+  padding: 1em;
+}
+
+.fcontent p {
+  color: white;
+  margin-bottom: 0;
+}
