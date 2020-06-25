@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ClockKnock</title>
+    <meta name="description" content="Simple Clock with session data of activities done">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">ClockKnock</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="mt-1">
+        <div class="on_loading">
+            <div class="loader"></div>
+
+            <h5>Loading ....</h5>
+        </div>
+
+        <div class="alerts">
+            <div id="emptyLog" class="alert alert-warning collapse">
+                <strong>Error!</strong> Log Message cannot be Empty.
+                <button class="close">&times;</button>
+            </div>
+
+            <div id="newActivity" class="alert alert-success collapse">
+                <strong>Error!</strong> New Activity Saved
+                <button class="close">&times;</button>
+            </div>
+
+
+            <div id="removeAll" class="alert alert-danger collapse">
+                <strong>Error!</strong> All Activites are removed.
+                <button class="close">&times;</button>
+            </div>
+        </div>
+    </aside>
+
+    <main role="main" class="container my-5">
+        <div class="canvas center">
+            <canvas id="clock" width="300" height="300"></canvas>
+        </div>
+
+        <div id="data">
+            <textarea class="text-justify" id="msg" placeholder="Enter Log Message...."></textarea>
+            <div id="logger" class="center">
+                <button class="btn btn-primary" id="checkin">In</button>
+                <button class="btn btn-primary" id="checkout">Out</button>
+                <button class="btn btn-danger" id="clearall">Clear</button>
+            </div>
+        </div>
+
+
+        <table id="tasklist" class="table table-striped table-bordered my-5">
+            <tbody>
+            </tbody>
+        </table>
+
+    </main>
+    <script src="./js/clock.js"></script>
+    <script src="./js/logger.js"></script>
+</body>
+
+</html>
