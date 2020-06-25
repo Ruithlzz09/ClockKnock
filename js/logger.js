@@ -7,10 +7,16 @@ class Info {
         this.date = now;
     }
 
-    toString(){
-        return '<tr><td>'+this.action+
-        '</td><td>'+this.date+'</td><td>'+
-        this.message+'</td></tr>';
+    toString() {
+        // refactor code
+
+        return `<tr><td> ${this.action}</td>
+                <td>${this.date}
+                </td><td>${this.message}</td></tr>`
+
+        // return '<tr><td>'+this.action+
+        // '</td><td>'+this.date+'</td><td>'+
+        // this.message+'</td></tr>';
     }
 
 }
@@ -24,14 +30,14 @@ function logger(action) {
     }
     var now = new Date();
     var date = now.toDateString() + " " + now.toLocaleTimeString();
-    var info = new Info(msg,action,date);
-    ele.value='';
+    var info = new Info(msg, action, date);
+    ele.value = '';
     newtask(info);
 }
 
 function newtask(data) {
     var newrow = document.getElementById("tasklist").insertRow(-1);
-    
+
     //Insert Required Cells into Row
     var cell1 = newrow.insertCell(0);
     var cell2 = newrow.insertCell(1);
@@ -41,7 +47,18 @@ function newtask(data) {
     cell3.innerHTML = data.message;
 }
 
-function  clearall(){
+function clearall() {
     $("table").children().remove();
-    
 }
+
+
+
+$(document).ready(function() {
+    $('main').hide()
+
+    setTimeout(() => {
+        $('main').show()
+        $('.on_loading').hide()
+    }, 1000);
+    
+})

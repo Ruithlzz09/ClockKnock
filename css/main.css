@@ -1,68 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
 
 /*Universal Settings*/
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Balsamiq Sans', 
-    cursive;
-    min-height: 100vh;
-    
+  font-family: "Balsamiq Sans", cursive;
+  min-height: 100vh;
 }
 
-main{
-    margin-bottom: 5rem;
+main {
+  margin-bottom: 5rem;
 }
 
 .canvas {
-    text-align: center;
+  text-align: center;
 }
 
 #clock {
-    display: inline-block;
-    background-color: #333;
+  display: inline-block;
+  background-color: #333;
 }
 
 #function,
 #logger {
-
-    text-align: center;
+  text-align: center;
 }
 
 #function #msg,
 #logger button {
-    margin: 0.5em;
-    display: inline-block;
+  margin: 0.5em;
+  display: inline-block;
 }
 
 #msg {
-    padding: 1em;
-    font-size: medium;
+  padding: 1em;
+  font-size: medium;
 }
 
-#tasklist{
-    padding: 3rem 0;
+/* Loader */
+.on_loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 
-footer {
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-.fcontent{
-    padding: 1em;
-}
-
-.fcontent p{
-    color: white;
-    margin-bottom: 0;
-}
-
-/*Alert*/
-

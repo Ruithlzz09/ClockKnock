@@ -1,0 +1,6 @@
+Refactor INFO object
+
+In JS directory, rename main.js to clock.js
+Added Loader and removed footer
+Redesign About Page
+

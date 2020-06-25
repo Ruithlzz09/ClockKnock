@@ -39,11 +39,10 @@
 
 
     <main role="main" class="container my-5">
-
         <div class="canvas">
             <canvas id="clock" width="300" height="300"></canvas>
         </div>
-        
+
         <div id="function">
             <textarea class="text-justify" id="msg" cols="40" rows="2" placeholder="Enter Log Message...."></textarea>
             <div id="logger">
@@ -54,21 +53,20 @@
         </div>
 
 
-        <table id="tasklist" class="table table-striped table-bordered">
+        <table id="tasklist" class="table table-striped table-bordered my-5">
             <tbody>
             </tbody>
         </table>
 
-
     </main>
 
+    <div class="on_loading">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
 
-    <footer>
-        <div class="fcontent">
-            <p class="text-center">CopyRight by Sachin Bisht &nbsp;|&nbsp;2020</p>
-        </div>
-    </footer>
-    <script src="./js/main.js"></script>
+   
+    <script src="./js/clock.js"></script>
     <script src="./js/logger.js"></script>
 </body>
 
