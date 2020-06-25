@@ -1,6 +1,4 @@
-Refactor INFO object
-
-In JS directory, rename main.js to clock.js
-Added Loader and removed footer
-Redesign About Page
-
+v1.0.0
+Refactor Info Object
+redefine clearAll,Check-IN and Check-Out function
+Added Alert functionality

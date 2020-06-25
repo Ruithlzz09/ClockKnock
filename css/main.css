@@ -47,7 +47,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
 }
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
@@ -58,8 +58,10 @@ main {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
+  margin: 1rem;
 }
+
 
 @keyframes spin {
   0% {
@@ -68,4 +70,12 @@ main {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+.alert{
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
