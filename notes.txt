@@ -1,4 +1,4 @@
-v1.0.0
-Refactor Info Object
-redefine clearAll,Check-IN and Check-Out function
-Added Alert functionality
+# ClockKnock v1.1.0
+
+Redesign css for responsive website
+Removing Redundant Code

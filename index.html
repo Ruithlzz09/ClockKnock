@@ -9,11 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 </head>
 
 <body>
@@ -64,13 +63,13 @@
     </aside>
 
     <main role="main" class="container my-5">
-        <div class="canvas">
+        <div class="canvas center">
             <canvas id="clock" width="300" height="300"></canvas>
         </div>
 
-        <div id="function">
-            <textarea class="text-justify" id="msg" cols="40" rows="2" placeholder="Enter Log Message...."></textarea>
-            <div id="logger">
+        <div id="data">
+            <textarea class="text-justify" id="msg" placeholder="Enter Log Message...."></textarea>
+            <div id="logger" class="center">
                 <button class="btn btn-primary" id="checkin">In</button>
                 <button class="btn btn-primary" id="checkout">Out</button>
                 <button class="btn btn-danger" id="clearall">Clear</button>
